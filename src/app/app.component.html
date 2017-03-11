@@ -1,3 +1,33 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row" *ngFor="let entry of entries; let i = index">
+                <div class="col-xs-5">
+                    <input [(ngModel)]="entry.name" placeholder="name"/>
+                </div>
+                <div class="col-xs-3">
+                    <input [(ngModel)]="entry.weight" placeholder="weight"/>
+                </div>
+                <div class="col-xs-3">
+                    <input [(ngModel)]="entry.value" placeholder="value"/>
+                </div>
+                <div class="col-xs-1">
+                    <button class="btn" (click)="removeRow(i)">X</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn add-btn" (click)="addRow()">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    Total Percent Listed: {{getTotalWeight()}}
+                </div>
+                <div class="col-xs-6">
+                    Weighted Average: {{computeAverage()}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

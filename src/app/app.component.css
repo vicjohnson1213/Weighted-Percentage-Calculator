@@ -1,0 +1,28 @@
+.container {
+    margin: auto;
+    width: 60%;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+/*.input {
+    display: inline-block;
+    width: 33%;
+    padding: 10px;
+    box-sizing: border-box;
+}*/
+
+input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #efefef;
+
+    padding: 5px 10px;
+}
+
+.btn {
+    width: 100%;
+}
