@@ -14,8 +14,7 @@ export class Entry {
 
 export class AppComponent {
   entries: Entry[] = [
-     { name: 'thing1', weight: 25, value: 80 },
-     { name: 'thing2', weight: 75, value: 95 }
+    { name: null, weight: null, value: null }
   ]
 
   addRow(): void {
